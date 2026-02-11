@@ -1,1 +1,16 @@
 # Forms
+> When a form is submitted, the browser makes a request. 
+> A script can respond to that request and process the data.
+
+* process the data (обработать данные)
+
+The form element consists of the start tag <form>,
+optional attributes defined in the start tag, and an end tag </form>.
+
+1. action - where data will be processed, script location to process data.
+`<form action="https://example.com/animals"></form>`
+
+data transfering
+method="GET" - submitted data is appended to URL, default method, makes data shareable
+method="POST" - included in body of the request, not visible in URL
+data is encrypted (if HTTPS using) and accessible only server script
