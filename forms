@@ -64,9 +64,11 @@ exp:
 - <input type="number" min="10" max="100" />
 3. **aria-describedly** attribute
 ```
-<label for="password">Password (required)</label>
-<input required minlength="8" type="password" id="password" name="password" aria-describedby="password-validation">
-<div id="password-validation">Enter at least eight characters</div>
+<div>
+    <label for="password">Password (required)</label>
+    <input required minlength="8" type="password" id="password" name="password" aria-describedby="password-validation">
+    <span id="password-validation" class="validation-message">Enter at least eight characters</span>
+</div>
 ```
 4. **pattern** attribute
 ```
