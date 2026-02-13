@@ -1,0 +1,120 @@
+# Forms
+> When a form is submitted, the browser makes a request. 
+> A script can respond to that request and process the data.
+
+* process the data (обработать данные)
+
+The form element consists of the start tag <form>
+optional attributes defined in the start tag, and an end tag </form>.
+
+1. action - where data will be processed, script location to process data.
+`<form action="https://example.com/animals"></form>`
+
+## data transfering
+method="GET" - submitted data is appended to URL, default method, makes data shareable
+method="POST" - included in body of the request, not visible in URL
+data is encrypted (if HTTPS using) and accessible only server script
+
+! in each form element you must write `name` attribute, 
+**name will be included in request to identify info from user**
+
+<select>
+<option selected> to pre-select one option
+
+### Group form controls
+elements: <fieldset> & <legend>
+<fieldset> - для группировки
+<legend> - для описания группы
+```
+<fieldset>
+    <legend>What is your favorite web technology</legend>
+
+    <label for="html">HTML</label>
+    <input type="radio" name="webfeature" value="html" id="html">
+
+    <label for="css">CSS</label>
+    <input type="radio" name="webfeature" value="css" id="css">
+</fieldset>
+```
+
+> Every <button> element inside a form works as a Submit button by default
+> type="submit/button/reset"
+
+### to submit form
+1. <button type="submit">submit</button>;
+2. <input type="submit" value="submit" />;
+3. using `Enter` key;
+
+### how to avoid re-entering data in forms (autofill)
+1. use sensible attribute value
+2. use autocomplete attribute
+exp:
+```
+<label for="email">Your email:</label>
+<input type="email" name="email" id="email" autocomplete="email" />
+// these 4 hints help browser to remember that's email field 
+```
+
+### help users to enter the right data to form
+> browser have built-in features for validation to check entered data
+> to activate there you need use **correct elements and attributes**
+1. **required** attribute
+2. type="email"
+```
+<input type="password" name="password" id="password" minlength="8" maxlength="40" required />
+<input type="number" min="10" max="100" />
+```
+3. **aria-describedly** attribute
+```
+<div>
+    <label for="password">Password (required)</label>
+    <input required minlength="8" type="password" id="password" name="password" aria-describedby="password-validation">
+    <span id="password-validation" class="validation-message">Enter at least eight characters</span>
+</div>
+```
+4. **pattern** attribute
+```
+<label for="animal">What is your favourite animal?</label>
+<input required type="text" id="animal" name="animal" pattern="[a-z]{2,20}" />
+```
+
+5. style 
+- input:invalid
+- input:user-invalid
+- input:valid
+
+6. paste meaningful error message vie setCustomValidity() (Constraint Validation API)
+```
+const nameInput = document.querySelector('[name="name"]');
+nameInput.addEventListener('invalid', () => {
+    nameInput.setCustomValidity('Please enter your name.');
+ });
+```
+
+recommended tap target size is 48px
+
+Допустимые значения `enterkeyhint`
+Атрибут принимает одно из семи фиксированных значений:
+
+1. **enter** — стандартная кнопка Enter (↵);
+2. **done** — «Готово» (часто с галочкой);
+3. **go** — «Перейти»;
+4. **next** — «Далее» (стрелка вправо);
+5. **previous** — «Назад» (стрелка влево);
+6. **search** — «Поиск» (увеличительное стекло);
+7. **send** — «Отправить» (самолётик/стрелка).
+* не применимо для type="radio/checkbox" так как нет механизма ввода/отправки данных
+
+examples
+<!-- Поиск -->
+<input type="search" enterkeyhint="search" placeholder="Искать...">
+
+<!-- Форма входа -->
+<input type="text" enterkeyhint="next" placeholder="Email">
+<input type="password" enterkeyhint="go" placeholder="Пароль">
+
+<!-- Отправка сообщения -->
+<textarea enterkeyhint="send" placeholder="Ваше сообщение..."></textarea>
+
+<!-- Завершение ввода -->
+<input type="tel" enterkeyhint="done" placeholder="Телефон">
