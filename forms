@@ -102,3 +102,17 @@ recommended tap target size is 48px
 6. search — «Поиск» (увеличительное стекло);
 7. send — «Отправить» (самолётик/стрелка).
 * не применимо для type="radio/checkbox" так как нет механизма ввода/отправки данных
+
+examples
+<!-- Поиск -->
+<input type="search" enterkeyhint="search" placeholder="Искать...">
+
+<!-- Форма входа -->
+<input type="text" enterkeyhint="next" placeholder="Email">
+<input type="password" enterkeyhint="go" placeholder="Пароль">
+
+<!-- Отправка сообщения -->
+<textarea enterkeyhint="send" placeholder="Ваше сообщение..."></textarea>
+
+<!-- Завершение ввода -->
+<input type="tel" enterkeyhint="done" placeholder="Телефон">
