@@ -45,3 +45,20 @@ property `font-family`
 3. `cursive` — курсивные шрифты
 4. `fantasy` — декоративные шрифты
 5. `monospace` — моноширинные шрифты. Шрифты у которых все символы имеют одинаковую ширину.
+
+
+```
+.text {
+  font: italic bold 24px Arial;
+}
+```
+
+*font-size/line-height пишутся через слеш*
+*Обязательными из них являются font-size и font-family. Остальные можно не указывать.*
+
+#### Правильный порядок слов
+font-style
+font-variant
+font-weight
+font-size / line-height (эти два правила записываются через слэш)
+font-family
