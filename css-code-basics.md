@@ -53,12 +53,16 @@ property `font-family`
 }
 ```
 
-*font-size/line-height пишутся через слеш*
-*Обязательными из них являются font-size и font-family. Остальные можно не указывать.*
+> [!IMPORTANT]
+> Обязательными из них являются **font-size** и **font-family**.
+> Остальные можно не указывать.
 
-#### Правильный порядок слов
-font-style
-font-variant
-font-weight
-font-size / line-height (эти два правила записываются через слэш)
-font-family
+#### Правильный порядок слов в свойстве `font`
+1. `font-style`
+2. `font-variant`
+3. `font-weight`
+4. `font-size / line-height` (эти два правила записываются через слеш)
+5. `font-family`
+
+#### Box model
+Размер элемента складывается из width/height + padding + border + margin
