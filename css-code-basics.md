@@ -118,3 +118,20 @@ Property `font-family`
 9. ` none `
 
 <hr>
+
+## Flex
+> Это некая ось, на которую «насаживаются» элементы.
+> Поворачивать главную ось можно посредством свойства `flex-direction`.
+
+#### Значения свойства `flex-direction`
+1. `row (по умолчанию);`
+2. `row-reverse;`
+3. `column;`
+4. `column-reverse;`
+
+<img width="400" alt="Flex-direction" src="https://github.com/user-attachments/assets/7e7a2684-f9c1-4af6-a6fa-d946753428b7" />
+
+#### Перенос flex элементов главной оси при переполнении
+1. `wrap` - перенос элементов;
+2. `wrap-reverse` - перенос элементов в обратном порядке;
+3. `nowrap` - перенос отключен;
