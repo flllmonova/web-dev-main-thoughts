@@ -18,6 +18,8 @@
 </style>
 ```
 
+<hr>
+
 > Капитель — вид строчных букв, размер которых совпадает (или приближен) к размеру заглавных букв.
 
 ```
@@ -26,12 +28,16 @@
 }
 ```
 
-property `text-decoration`
+<hr>
+
+Property `text-decoration`
 1. `underline` — Подчёркивание текста
 2. `line-through` — Перечёркивание текста
 3. `overline` — Надчёркивание текста
 
-property `font-family`
+<hr>
+
+Property `font-family`
 
 ```
 .new-font {
@@ -64,9 +70,9 @@ property `font-family`
 4. `font-size / line-height` (эти два правила записываются через слеш)
 5. `font-family`
 
-<img height="300" alt="Box model" src="https://github.com/user-attachments/assets/3e9406a4-32f9-4f73-ab34-6306b217c09c" />
-
 <hr>
+
+<img height="300" alt="Box model" src="https://github.com/user-attachments/assets/3e9406a4-32f9-4f73-ab34-6306b217c09c" />
 
 #### Box model
 Размер элемента складывается из 4 слоев:
@@ -82,6 +88,13 @@ property `font-family`
 > [!IMPORTANT]
 > Чтобы размер элемента не выходил за пределы width x height,
 > меняем поведение **`box-sizing: border-box;`**
+
+```
+.box-sizing {
+  box-sizing: content-box; /* размер элемента: content + padding + border */
+  box-sizing: border-box; /* размер элемента: content */ 
+}
+```
 
 <hr>
 
@@ -103,3 +116,5 @@ property `font-family`
 7. ` inset `
 8. ` outset `
 9. ` none `
+
+<hr>
