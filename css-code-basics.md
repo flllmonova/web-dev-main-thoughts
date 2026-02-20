@@ -76,13 +76,14 @@ property `font-family`
 }
 ```
 ##### Стили границ рамки ` border-style `
-1. ` dotted ` - - - - - - - - -
-2. ` dashed ` .................
-3. ` solid `  _________________
-4. ` double ` =================
+1. ` dotted ` - - -
+2. ` dashed ` ...
+3. ` solid `  ___
+4. ` double ` ===
 5. ` groove `
 6. ` ridge `
 7. ` inset `
 8. ` outset `
 9. ` none `
 
+<img width="967" height="720" alt="image" src="https://github.com/user-attachments/assets/3e9406a4-32f9-4f73-ab34-6306b217c09c" />
