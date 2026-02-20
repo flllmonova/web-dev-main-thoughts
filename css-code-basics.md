@@ -66,3 +66,13 @@ property `font-family`
 
 #### Box model
 Размер элемента складывается из width/height + padding + border + margin
+
+#### Свойство `border`
+
+```
+.border {
+  border: 1px solid #000; /* ширина форма цвет рамки */
+  border-radius: 10px; /* скругление рамки */
+}
+```
+
