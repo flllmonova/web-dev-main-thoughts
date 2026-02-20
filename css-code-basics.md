@@ -156,3 +156,6 @@ Property `font-family`
 5. **`baseline`** - по базовой линии текста;
 6. **`first-baseline`** - по первой строке текста;
 7. **`last-baseline`** - по последней строке текста;
+
+
+#### Flex-grow & Flex-shrink
