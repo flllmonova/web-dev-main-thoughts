@@ -64,8 +64,23 @@ property `font-family`
 4. `font-size / line-height` (эти два правила записываются через слеш)
 5. `font-family`
 
+<img height="300" alt="Box model" src="https://github.com/user-attachments/assets/3e9406a4-32f9-4f73-ab34-6306b217c09c" />
+
 #### Box model
-Размер элемента складывается из width/height + padding + border + margin
+Размер элемента складывается из 4 слоев:
+1. width + height = content
+2. padding
+3. border
+4. margin (не влияет на физический размер)
+
+> По умолчанию браузер высчитывает размер элемента, складывая все слои за исключением margin
+> content(width x height) + padding + border
+> что определяется свойством `**box-sizing: content-box;**`
+
+> [!IMPORTANT]
+> Чтобы размер элемента не выходил за пределы width x height
+> меняем поведение `**box-sizing: border-box;**`
+
 
 #### Свойство ` border `
 
@@ -85,5 +100,3 @@ property `font-family`
 7. ` inset `
 8. ` outset `
 9. ` none `
-
-<img width="967" height="720" alt="image" src="https://github.com/user-attachments/assets/3e9406a4-32f9-4f73-ab34-6306b217c09c" />
