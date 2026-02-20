@@ -66,6 +66,8 @@ property `font-family`
 
 <img height="300" alt="Box model" src="https://github.com/user-attachments/assets/3e9406a4-32f9-4f73-ab34-6306b217c09c" />
 
+<hr>
+
 #### Box model
 Размер элемента складывается из 4 слоев:
 1. width + height = content
@@ -74,13 +76,14 @@ property `font-family`
 4. margin (не влияет на физический размер)
 
 > По умолчанию браузер высчитывает размер элемента, складывая все слои за исключением margin
-> content(width x height) + padding + border
-> что определяется свойством `**box-sizing: content-box;**`
+> content(width x height) + padding + border,
+> что определяется свойством **`box-sizing: content-box;`**
 
 > [!IMPORTANT]
-> Чтобы размер элемента не выходил за пределы width x height
-> меняем поведение `**box-sizing: border-box;**`
+> Чтобы размер элемента не выходил за пределы width x height,
+> меняем поведение **`box-sizing: border-box;`**
 
+<hr>
 
 #### Свойство ` border `
 
