@@ -405,7 +405,8 @@ div ~ p {
   color: red;
 }
 ```
-> Будет выбрано 4 <p> по селектору `div ~ p`: <div> <p> <p> <p> <blockquote> <p>
+> Будет выбрано 4 <p> по селектору `div ~ p`: `<div>` `<p>` `<p>` `<p>` `<blockquote>` `<p>`
+
 
 <hr>
 
