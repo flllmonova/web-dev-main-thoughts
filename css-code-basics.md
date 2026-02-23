@@ -223,3 +223,40 @@ Property `font-family`
   }
 }
 ```
+
+<hr>
+
+#### Animations
+1. задать анимацию через `@keyframes`
+
+```
+@keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: blue;
+  }
+}
+```
+
+2. применить анимацию к элементу через селектор
+> Для этого используется правило animation с тремя основными значениями
+- Название анимации
+- Длительность анимации. Указывается в секундах (1s, 2s, 3s и так далее)
+- Бесконечная анимация или нет (если бесконечная, то указывается параметр infinite)
+
+```
+.animation-text {
+  animation: color-change 3s infinite;
+}
+
+<p class="animation-text">
+  Text with color-change animation. The color of the text changes from blue to red and back again
+</p>
+```
