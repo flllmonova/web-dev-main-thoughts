@@ -350,7 +350,7 @@ p {
 }
 ```
 
-2. Селектор по id ` #id ` (id selector)
+2. Селектор по id ` #id ` (ID selector)
 - комбинирование с селектором типа
 ```
 #cool,
@@ -377,7 +377,7 @@ p.red {
 }
 ```
 
-5. Несколько селекторов ` A, B ` (comma combinator)
+5. Несколько селекторов ` A, B ` (grouping selector, comma combinator)
 ```
 h1, p {
   color: red;
@@ -513,18 +513,38 @@ p:first-of-type {
 22. селектор по атрибуту ` [attribute] `
 - можно комбинировать ` a[href] `
 
-23. селектор по значению атрибута [attribute="value"]
+23. селектор по значению атрибута [attribute='value']
+> [!IMPORTANT]
+> 2 оператора **`s`** (case-**sensetive**) и **`i`** (case-**insensetive**)
+> их можно добавить в селектор таким образом: [attr='value' s] / [attr='value' i]
 
-24. селектор по значению атрибута `начало с` ` [attribute^="value"] `
+25. селектор по значению атрибута `начало с` ` [attribute^='value'] `
 (Attribute Starts With Selector)
-- например ` .toy[category^="Swim"] `
+- например ` .toy[category^='swim' i] `
 
-25. селектор по значению атрибута `заканчивается на` ` [attribute$="value"] `
+25. селектор по значению атрибута `заканчивается на` ` [attribute$='value'] `
 (Attribute Ends With Selector)
-- например ` img[src$=".jpg"] `
+- например ` img[src$='.jpg'] `
 
 26. селектор по значению атрибута в котором есть определенная последовательность символов [attribute*="value"]
-- например ` img[src*="/thumbnails/"] ` выберет все фотки из папки thumbnails
+- например ` img[src*='/thumbnails/'] ` выберет все фотки из папки thumbnails
+
+```
+/* A href that contains "example.com" */
+[href*='example.com'] {
+  color: red;
+}
+
+/* A href that starts with https */
+[href^='https'] {
+  color: green;
+}
+
+/* A href that ends with .com */
+[href$='.com'] {
+  color: blue;
+}
+```
 
 <hr>
 
