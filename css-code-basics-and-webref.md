@@ -531,10 +531,20 @@ p:first-of-type {
 ### Нормалайзер CSS
 > Нет такого понятия, как элемент HTML без стилей.
 > Каждая веб-страница использует по крайней мере один CSS: **стиль клиентского приложения**.
-Чтобы у браузеров был исходный одинаковый стиль, используется сброс CSS, файл normalize.css
+Чтобы у браузеров был исходный одинаковый стиль,
+используется сброс CSS, файл [normalize.css](https://piccalil.li/blog/a-more-modern-css-reset/)
 ```
 <head>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+```
+
+Для установки всем элементам border box model
+```
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 ```
