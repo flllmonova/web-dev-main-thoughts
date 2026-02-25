@@ -9,7 +9,9 @@ height: min-content;
 > Полосы прокрутки (scrollbars) находятся в отступах (padding box). <br>
 > Свойства `outline` и `box-shadow` занимают пространство полей (margin box), не влияют на размер box model.
 
-#### & - represent parent selector
+<hr>
+
+### & - represent parent selector
 ```
 /* without & */
 .button {
@@ -51,6 +53,8 @@ height: min-content;
   margin-bottom: 10px;
 }
 
+/* with :is() */
+
 .card :is(.title, .subtitle, .description) {
   margin-bottom: 10px;
 }
@@ -58,6 +62,8 @@ height: min-content;
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: blue;
 }
+
+/* with :is() */
 
 :is(h1, h2, h3, h4, h5, h6) a {
   color: blue;
@@ -96,3 +102,21 @@ CSS conditional group rules like `@container`, `@media`, `@supports`, and `@laye
     }
   }
 ```
+
+<hr>
+
+### Cascade Algorithm
+1. 
+> [!IMPORTANT]
+> 1. `!important` на первом месте. `property: value !important`
+> 2. `Инлайновые` стили будут всегда сильнее, чем стили из тега `<style>` или `style.css` вне зависимости от их специфичности.
+> 3. Специфичность
+
+### Specifity
+(1, 0, 0) - id
+(0, 1, 0) - class, :pseudo-class, [attribute]
+(0, 0, 1) - element, ::pseudo-element
+
+* **universal selector** has no specififty, his value (0, 0, 0)
+**:not()**, **:is()** не добавляет специфичность и никак не влияет на то
+**:where()** делает внутри себя специфичность (0,0,0) 
