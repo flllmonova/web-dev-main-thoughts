@@ -209,8 +209,14 @@ all: inherit | initial | unset | revert;
 5. Радиус скругления (по часовой):
 `border-start-start-radius`, `border-start-end-radius`, `border-end-end-radius`, `border-end-start-radius`
 
-6. Viewports units
+6. Позиционирование
+* `inset` сокращенное свойство для 4 сторон позиционирования (top, right, bottom, left)
+1. `inset-block`, `inset-block-start`, `inset-block-end`
+2. `inset-inline`, `inset-inline-start`, `inset-inline-end`
 
+7. Units
+1. `vi` -> vw (viewWidth)
+2. `vb` -> vh (viewHeight)
 
 ```
 p {
@@ -219,3 +225,17 @@ p {
 ```
 
 <hr>
+
+### Writing mode & direction & text-orientation
+1. `writing-mode: ltr | rtl;`
+2. `direction: horizontal-tb | vertical-lr | vertical-rl;`
+3. `text-orientation: mixed | upright | sideways;`
+
+```
+p {
+  direction: vertical-lr;
+  text-orientation: upright;
+}
+```
+
+### Custom properties
