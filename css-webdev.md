@@ -169,9 +169,11 @@ all: inherit | initial | unset | revert;
 > Создает колонки, по мере доступного пространства увеличивает / уменьшает кол-во колонок
 > Фиксированное число колонок `column-count: 2;`
 ```
-.countries {
+.text {
     width: 100%;
     column-width: 260px;
     column-gap: 1em;
 }
 ```
+
+
