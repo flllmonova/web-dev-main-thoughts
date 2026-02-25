@@ -176,4 +176,46 @@ all: inherit | initial | unset | revert;
 }
 ```
 
+<hr>
 
+### Logical properties
+1. `inline-axis` (строчная ось) - направление текста в строке (справа налево / слева направо)
+2. `block-axis` (блочная ось) - направление между блоками (сверху вниз / снизу вверх)
+
+#### Ключевые понятия:
+1. `inline-start` — начало строчной оси;
+2. `inline-end` — конец строчной оси;
+3. `block-start` — начало блочной оси;
+4. `block-end` — конец блочной оси;
+
+#### Основные логические свойства
+1. Отступы и поля:
+- `margin-inline-start`, `margin-inline-end`, `margin-block-start`, `margin-block-end`;
+- `padding-inline-start`, `padding-inline-end`, `padding-block-start`, `padding-block-end`;
+- shorthands: `margin-block`, `margin-inline`, `padding-block`, `padding-inline`
+
+2. Границы:
+- `border-inline-start`, `border-inline-end`, `border-block-start`, `border-block-end`
+- shorthands: `border-block`, `border-inline`
+
+3. Размеры:
+- `inline-size` — ширина в горизонтальном режиме, высота в вертикальном;
+- `block-size` - высота в горизонтальном режиме, ширина в вертикальном;
+
+4. Минимум/максимум:
+- `min-inline-size`, `max-inline-size`;
+- `min-block-size`, `max-block-size`.
+
+5. Радиус скругления (по часовой):
+`border-start-start-radius`, `border-start-end-radius`, `border-end-end-radius`, `border-end-start-radius`
+
+6. Viewports units
+
+
+```
+p {
+  text-align: end; /* text-align: right; */
+}
+```
+
+<hr>
