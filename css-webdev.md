@@ -117,6 +117,6 @@ CSS conditional group rules like `@container`, `@media`, `@supports`, and `@laye
 (0, 1, 0) - class, :pseudo-class, [attribute]
 (0, 0, 1) - element, ::pseudo-element
 
-* **universal selector** has no specififty, his value (0, 0, 0)
-**:not()**, **:is()** не добавляет специфичность и никак не влияет на то
-**:where()** делает внутри себя специфичность (0,0,0) 
+- `*` **universal selector** has no specififty, his value (0, 0, 0)
+- **:not()**, **:is()** не добавляет специфичность и никак не влияет на то
+- **:where()** делает внутри себя специфичность (0,0,0) 
