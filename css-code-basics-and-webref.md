@@ -136,6 +136,14 @@
 2. `wrap-reverse` - перенос элементов в обратном порядке;
 3. `nowrap` - перенос отключен;
 
+#### Shorthand flex-direction & flex-wrap
+```
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+```
+
 #### Выравнивание элементов внутри контейнера
 1. `justify-content` - относительно главной оси
 2. `align-items` - относительно побочной оси
@@ -148,6 +156,24 @@
 5. **`space-around`** - элементы равномерно распределяются с одинаковым пространством вокруг каждого. Пространство до первого и после последнего элемента равно половине расстояния между соседними элементами.
 6. **`space-evenly`** - расстояния между элементами и от краёв контейнера до элементов одинаковы.
 
+#### Значения **`align-content`**
+1. **`flex-start`**
+2. **`flex-end`**
+3. **`center`**
+4. **`space-between`**
+5. **`space-around`**
+6. **`space-evenly`**
+7. **`stretch`**
+
+> [!IMPORTANT]
+> Shorthand для justify-content & align-content `place-content`
+```
+.container {
+  place-content: space-between;
+  /* sets both to space-between */
+}
+```
+
 #### Значения **`align-items`**
 1.**`stretch`** - растягивает по всей оси (по умолчанию)
 2. **`flex-start`** - начало оси;
@@ -157,12 +183,15 @@
 6. **`first-baseline`** - по первой строке текста;
 7. **`last-baseline`** - по последней строке текста;
 
+#### Значения **`align-self`**
+1.**`stretch`**
+2. **`flex-start`**
+3. **`flex-end`**
+4. **`center`**
 
 #### Flex-grow & Flex-shrink
 1. По умолчанию `flex-grow: 0` т.е. элемент не растёт
 2. По умолчанию `flex-shrink: 1` т.е. элемент сжимается
-
-
 ```
 .nav {
   display: flex;
@@ -175,6 +204,13 @@
 .nav-button {
   flex-shrink: 0; /* кнопка не сжимается */
   width: 100px;
+}
+```
+
+#### Shorthand flex-grow & flex-short & flex-basis
+```
+.item1 {
+  flex: 1 1 auto;
 }
 ```
 
