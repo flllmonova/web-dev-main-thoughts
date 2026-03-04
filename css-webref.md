@@ -66,3 +66,10 @@ button:hover {
 
 ### Position Sticky 
 Обязательно указать 1 сторону для привязки
+
+### Box-model
+#### background-clip 
+свойство определяющее в каких областях элемента будут отображаться фоновая картинка и фоновый цвет.
+`background-clip: border-box | padding-box | content-box | text;`
+> [!IMPORTANT]
+> Делать цвет `transparent` чтобы background-clip сработал
