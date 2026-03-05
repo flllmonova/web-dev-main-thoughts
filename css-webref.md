@@ -73,3 +73,7 @@ button:hover {
 `background-clip: border-box | padding-box | content-box | text;`
 > [!IMPORTANT]
 > Делать цвет `transparent` чтобы background-clip сработал
+
+### Margin Border Padding
+* Выравнивание блока по центру через значение `margin: auto;` работает только в сочетании с `width`.
+* Отрицательный `margin` возможен, отрицательный `padding` и `border` - нет
