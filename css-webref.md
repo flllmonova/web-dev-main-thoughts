@@ -95,3 +95,7 @@ width: 100%; height: auto;
 ```
 width: auto; height: auto;
 ```
+
+### Блочные элементы
+* Блочные элементы это `display: block / list-item / table;`
+* Свойство vertical-align не применимо к блочному элементу
