@@ -87,4 +87,11 @@ button:hover {
 Margin не работает для элементов: строчных, строчно-блочных, обтекаемых, flex-элементов, элементов с position absolute / fixed.
 
 ### Width & Height
-ПО умолчанию `auto` т.е. размер по контенту
+1. Элемент `display: block;`
+```
+width: 100%; height: auto;
+```
+2. Элемент `display: inline;`
+```
+width: auto; height: auto;
+```
