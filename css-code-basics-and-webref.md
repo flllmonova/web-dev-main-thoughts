@@ -297,6 +297,33 @@ body {
 }
 ```
 
+1. *Mobile first*
+при увеличении ширины экрана включаются правила с @media (min-width).
+```
+.container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+```
+
+2. *Desktop first*
+при уменьшении ширины экрана включаются правила с @media (max-width)
+
+```
+.container {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+```
+
 <hr>
 
 #### Animations
