@@ -124,10 +124,10 @@
 > Поворачивать главную ось можно посредством свойства `flex-direction`.
 
 #### Значения свойства `flex-direction`
-1. `row (по умолчанию);`
-2. `row-reverse;`
-3. `column;`
-4. `column-reverse;`
+1. `row (по умолчанию);` начало справо, start-правая сторона
+2. `row-reverse;` начало слева, start-левая сторона
+3. `column;` начало сверху, start-верх
+4. `column-reverse;` начало снизу, start-снизу
 
 <img width="400" alt="Flex-direction" src="https://github.com/user-attachments/assets/7e7a2684-f9c1-4af6-a6fa-d946753428b7" />
 
