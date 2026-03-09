@@ -125,15 +125,15 @@
 
 #### Значения свойства `flex-direction`
 1. `row (по умолчанию);` начало справо, start-правая сторона
-2. `row-reverse;` начало слева, start-левая сторона
+2. `row-reverse;` начало слева, start-левая сторона, обратный порядок элементов
 3. `column;` начало сверху, start-верх
-4. `column-reverse;` начало снизу, start-снизу
+4. `column-reverse;` начало снизу, start-снизу, обратный порядок элементов
 
 <img width="400" alt="Flex-direction" src="https://github.com/user-attachments/assets/7e7a2684-f9c1-4af6-a6fa-d946753428b7" />
 
 #### Перенос flex элементов главной оси при переполнении
 1. `wrap` - перенос элементов;
-2. `wrap-reverse` - перенос элементов в обратном порядке;
+2. `wrap-reverse` - линии идут в обратном порядке;
 3. `nowrap` - перенос отключен;
 
 #### Shorthand flex-direction & flex-wrap
