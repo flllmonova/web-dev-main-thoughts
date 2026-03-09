@@ -4,7 +4,7 @@
 3. ` absolute `
 4. ` fixed `
 5. ` sticky `
-*z-index работает только для элементов, у которых position задано как relative, absolute или fixed*
+*z-index работает только для элементов, у которых position задано как relative, absolute, fixed или sticky*
 
 ### Как сдвигаются элементы
 ```
