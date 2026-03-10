@@ -632,3 +632,23 @@ p:first-of-type {
   box-sizing: border-box;
 }
 ```
+
+### Animation
+
+```
+.button {
+ /* code */
+  transition: width 2s;
+}
+
+.button:hover {
+  width: 200px;
+}
+```
+
+<img width="797" height="572" alt="image" src="https://github.com/user-attachments/assets/43052da4-1811-4950-b6a3-da77a4146ebb" />
+<img width="493" height="392" alt="image" src="https://github.com/user-attachments/assets/929c623a-c9d7-4dff-a243-3542e6964cd6" />
+*чтобы охватить все свойства `transition-property: all`*
+<img width="566" height="421" alt="image" src="https://github.com/user-attachments/assets/3aced5e1-7f08-4fba-9ff6-a5bdb8220c21" />
+<img width="428" height="252" alt="image" src="https://github.com/user-attachments/assets/1405d1c1-f605-40c0-840c-ea791612bd08" />
+
