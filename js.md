@@ -2,6 +2,7 @@
 1. TypeError;
 - TypeError: Assignment to constant variable.
 2. SyntaxError;
+- SyntaxError: Missing initializer in const declaration;
   
 > Переменные необходимы только при работе с циклами.
 > В остальном можно обойтись без них, используя константы.
