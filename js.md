@@ -80,3 +80,10 @@ switch (status) {
 ('str').repeat(times) // метод использует цикл для динамического создания строки
 ```
 
+### Array creation
+* create and fill array
+```
+const len = 4;
+const arr = new Array(len).fill(1);
+// [1, 1, 1, 1];
+```
