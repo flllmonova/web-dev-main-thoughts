@@ -646,9 +646,48 @@ p:first-of-type {
 }
 ```
 
-<img width="797" height="572" alt="image" src="https://github.com/user-attachments/assets/43052da4-1811-4950-b6a3-da77a4146ebb" />
-<img width="493" height="392" alt="image" src="https://github.com/user-attachments/assets/929c623a-c9d7-4dff-a243-3542e6964cd6" />
-*чтобы охватить все свойства `transition-property: all`*
-<img width="566" height="421" alt="image" src="https://github.com/user-attachments/assets/3aced5e1-7f08-4fba-9ff6-a5bdb8220c21" />
-<img width="428" height="252" alt="image" src="https://github.com/user-attachments/assets/1405d1c1-f605-40c0-840c-ea791612bd08" />
+units use: `ms` `s`;
+##### transition-timing-function
+* ease / ease-in-out - slow -> fast -> slow;
+* linear - same speed;
+* ease-in - slow -> fast;
+* ease-out - fast -> slow;
+* cubic-besier (n,n,n,n)
 
+```
+div {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transotion-delay: 1s;
+/*
+  transition: width 2s ease 1s;
+*/
+}
+
+```
+
+```
+@keyframes example {
+  0% {
+    bg-color: red;
+  }
+  100% {
+    bg-color: blue;
+  }
+}
+
+div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-itearation-count: infinite;
+  animation-direction: alternate;
+/*
+  animation: example 5s linear 1s infinite alternate;
+*/    
+}
+```
+
+*чтобы охватить все свойства `transition-property: all`*
